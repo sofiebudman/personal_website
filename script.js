@@ -76,9 +76,10 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Add animation classes to elements
+// Add animation classes to elements and observe them
 document.querySelectorAll('.project-card, .skill-item').forEach(element => {
     element.classList.add('fade-in');
+    observer.observe(element);
 });
 
 // Continuous typing animation for hero section
